@@ -19,9 +19,9 @@ int main(int argc, char *argv[])
     QCoreApplication a(argc, argv);
 
     //电脑
-    Computer* HP = new HPComputer("惠普");
-    Computer* HW = new HPComputer("华为");
-    Computer* MAC = new HPComputer("苹果");
+    Computer* HP = new HPComputer(QStringLiteral("惠普"));
+    Computer* HW = new HPComputer(QStringLiteral("华为"));
+    Computer* MAC = new HPComputer(QStringLiteral("苹果"));
 
     //软件
     SoftWare* ppt = new PPTSoftWare("PPT");

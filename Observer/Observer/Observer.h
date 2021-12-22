@@ -1,6 +1,7 @@
 ﻿#ifndef __OBSERVER_H__
 #define __OBSERVER_H__
 
+#include <QString>
 //观察者抽象类(汽车)
 class Observer
 {

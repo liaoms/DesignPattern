@@ -18,7 +18,7 @@ public:
 
     virtual void Update(QString color)   //响应接口
     {
-        qDebug() << m_CarName << " 收到 '" << color << "' " << "开始执行";
+        qDebug() << m_CarName << QStringLiteral("收到 '") << color << "' " << QStringLiteral("开始执行");
     }
 
 };

@@ -19,26 +19,26 @@ int main(int argc, char *argv[])
 
     TrafficSubject traffic;
 
-    CarObserver car1("丰田");
+    CarObserver car1(QStringLiteral("丰田"));
     traffic.addObserver(&car1);  //车辆注册到交通灯系统中
 
-    CarObserver car2("本田");
+    CarObserver car2(QStringLiteral("本田"));
     traffic.addObserver(&car2);
 
-    CarObserver car3("宝马");
+    CarObserver car3(QStringLiteral("宝马"));
     traffic.addObserver(&car3);
 
-    CarObserver car4("马自达");
+    CarObserver car4(QStringLiteral("马自达"));
     traffic.addObserver(&car4);
 
-    traffic.Notify("红灯");   //交通灯发信号
+    traffic.Notify(QStringLiteral("红灯"));   //交通灯发信号
 
     qDebug() << endl;
     QThread::sleep(2);
 
     traffic.removeObserver(&car2);  //目标主题移除car2
 
-    traffic.Notify("绿灯");
+    traffic.Notify(QStringLiteral("绿灯"));
 
 
     return a.exec();
