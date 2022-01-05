@@ -1,4 +1,4 @@
-﻿#ifndef __TVDEVICE_H__
+#ifndef __TVDEVICE_H__
 #define __TVDEVICE_H__
 
 #include <QString>
@@ -9,7 +9,7 @@
 class TVDevice : public Device
 {
 public:
-    TVDevice(QString name) : Device(name)
+    TVDevice(QString name = "电视") : Device(name)
     {
 
     }

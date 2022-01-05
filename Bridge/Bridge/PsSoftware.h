@@ -1,13 +1,13 @@
-﻿#ifndef __PSSOFTWARE_H__
+#ifndef __PSSOFTWARE_H__
 #define __PSSOFTWARE_H__
 
 #include "Software.h"
 #include <QDebug>
 
-class PSSoftWare : public SoftWare
+class PsSoftWare : public SoftWare
 {
 public:
-    PSSoftWare(QString name) : SoftWare(name)
+    PsSoftWare(QString name = "PS") : SoftWare(name)
     {
     }
 

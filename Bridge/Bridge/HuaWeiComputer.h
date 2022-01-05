@@ -1,4 +1,4 @@
-﻿#ifndef __HUAWEICOMPUTER_H__
+#ifndef __HUAWEICOMPUTER_H__
 #define __HUAWEICOMPUTER_H__
 
 #include "Computer.h"
@@ -9,7 +9,7 @@ class HuaWeiComputer : public Computer
 {
 
 public:
-    HuaWeiComputer(QString pcName) : Computer(pcName)
+    HuaWeiComputer(QString pcName = "HuaWei_PC") : Computer(pcName)
     {
 
     }

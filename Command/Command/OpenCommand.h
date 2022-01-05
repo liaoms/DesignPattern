@@ -1,7 +1,8 @@
-﻿#ifndef __OPENCOMMAND_H__
+#ifndef __OPENCOMMAND_H__
 #define __OPENCOMMAND_H__
 
 #include "Device.h"
+#include "ICommand.h"
 #include <QDebug>
 
 //具体命令

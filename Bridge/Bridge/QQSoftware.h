@@ -1,4 +1,4 @@
-﻿#ifndef __QQSOFTWARE_H__
+#ifndef __QQSOFTWARE_H__
 #define __QQSOFTWARE_H__
 
 #include "Software.h"
@@ -7,7 +7,7 @@
 class QQSoftWare : public SoftWare
 {
 public:
-    QQSoftWare(QString name) : SoftWare(name)
+    QQSoftWare(QString name = "QQ") : SoftWare(name)
     {
     }
 

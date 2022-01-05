@@ -1,4 +1,4 @@
-﻿#ifndef __PPTSOFTWARE_H__
+#ifndef __PPTSOFTWARE_H__
 #define __PPTSOFTWARE_H__
 
 #include "Software.h"
@@ -7,7 +7,7 @@
 class PPTSoftWare : public SoftWare
 {
 public:
-    PPTSoftWare(QString name) : SoftWare(name)
+    PPTSoftWare(QString name = "PPT") : SoftWare(name)
     {
     }
 

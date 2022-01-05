@@ -1,4 +1,4 @@
-﻿#include <QCoreApplication>
+#include <QCoreApplication>
 #include "User.h"
 #include "TVDevice.h"
 #include "LightDevice.h"
@@ -12,8 +12,8 @@ int main(int argc, char *argv[])
     QCoreApplication a(argc, argv);
 
     //命令接收执行者
-    Device* pTv = new TVDevice("电视机");
-    Device* pLight = new LightDevice("电灯");
+    Device* pTv = new TVDevice();
+    Device* pLight = new LightDevice();
 
     //具体命名
     ICommand* pOpen = new OpenCommand;      //定义命令

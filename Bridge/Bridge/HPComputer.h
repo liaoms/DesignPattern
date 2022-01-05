@@ -1,4 +1,4 @@
-﻿#ifndef __HBCOMPUTER_H__
+#ifndef __HBCOMPUTER_H__
 #define __HBCOMPUTER_H__
 
 #include "Computer.h"
@@ -9,7 +9,7 @@ class HPComputer : public Computer
 {
 
 public:
-    HPComputer(QString pcName) : Computer(pcName)
+    HPComputer(QString pcName = "HP_PC") : Computer(pcName)
     {
 
     }

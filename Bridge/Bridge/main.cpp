@@ -1,4 +1,4 @@
-﻿#include <QCoreApplication>
+#include <QCoreApplication>
 #include "HPComputer.h"
 #include "HuaWeiComputer.h"
 #include "MacComputer.h"
@@ -19,21 +19,23 @@ int main(int argc, char *argv[])
     QCoreApplication a(argc, argv);
 
     //电脑
-    Computer* HP = new HPComputer(QStringLiteral("惠普"));
-    Computer* HW = new HPComputer(QStringLiteral("华为"));
-    Computer* MAC = new HPComputer(QStringLiteral("苹果"));
+    Computer* HP = new HPComputer();
+    Computer* HW = new HuaWeiComputer();
+    Computer* MAC = new MacComputer();
 
     //软件
-    SoftWare* ppt = new PPTSoftWare("PPT");
-    SoftWare* ps = new PPTSoftWare("PS");
-    SoftWare* qq = new PPTSoftWare("QQ");
+    SoftWare* ppt = new PPTSoftWare();
+    SoftWare* ps = new PsSoftWare();
+    SoftWare* qq = new QQSoftWare();
 
     //桥接
     HP->setSoftWare(ppt);
     HP->run();
+    qDebug() << endl;
 
     HP->setSoftWare(ps);
     HP->run();
+    qDebug() << endl;
 
     HP->setSoftWare(qq);
     HP->run();
@@ -41,6 +43,7 @@ int main(int argc, char *argv[])
 
     HW->setSoftWare(ppt);
     HW->run();
+    qDebug() << endl;
 
     HW->setSoftWare(ps);
     HW->run();

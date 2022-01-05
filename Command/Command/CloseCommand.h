@@ -1,7 +1,8 @@
-﻿#ifndef __CLOSECOMMAND_H__
+#ifndef __CLOSECOMMAND_H__
 #define __CLOSECOMMAND_H__
 
 #include "Device.h"
+#include "ICommand.h"
 #include <QDebug>
 
 //具体命令

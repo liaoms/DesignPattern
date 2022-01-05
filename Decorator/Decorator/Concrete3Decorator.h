@@ -1,4 +1,4 @@
-﻿#ifndef __CONCRETE3DECORATOR_H__
+#ifndef __CONCRETE3DECORATOR_H__
 #define __CONCRETE3DECORATOR_H__
 
 //装饰子类(具体装饰的内容，可以无限多个子类)

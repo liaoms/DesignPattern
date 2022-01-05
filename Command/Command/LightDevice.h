@@ -1,4 +1,4 @@
-﻿#ifndef __LIIGHTDEVICE_H__
+#ifndef __LIIGHTDEVICE_H__
 #define __LIIGHTDEVICE_H__
 
 #include <QString>
@@ -9,7 +9,7 @@
 class LightDevice : public Device
 {
 public:
-    LightDevice(QString name) : Device(name)
+    LightDevice(QString name = "电灯") : Device(name)
     {
 
     }
